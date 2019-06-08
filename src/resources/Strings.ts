@@ -1,5 +1,5 @@
 export const Strings = {
-  email: 'contact@xcvrsion.com',
+  email: 'info@xcvrsion.com',
   subtitle: 'A virtual reality company',
   title: 'XCVRSION',
 };
