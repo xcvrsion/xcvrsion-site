@@ -27,7 +27,7 @@ export const Section: FC<ISectionProps> = (props) => {
 
 const styles = {
   section: {
-    width: '100%',
+    width: '100vw',
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',

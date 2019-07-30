@@ -12,7 +12,7 @@ export const IntroSection: FC = () => {
             {'Tour like never before, quicker than ever.'}
           </Text>
           <Text p>
-            {'Take a virtual trip to your favorite university, a home of interest, or the latest concert.'}
+            {'Go on a virtual tour of your favorite university, a home of interest, or the latest concert.'}
           </Text>
           <div style={{ width: '100%', display: 'grid', gridGap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))' }}>
             <Button title={'Download from App Store'} href=''>

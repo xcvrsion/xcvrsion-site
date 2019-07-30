@@ -5,6 +5,7 @@ export interface ILinkProps {
   style?: CSSProperties;
   href?: string;
   noUnderline?: boolean;
+  icon?: any
 }
 
 export const Link: FC<ILinkProps> = (props) => {
@@ -17,6 +18,7 @@ export const Link: FC<ILinkProps> = (props) => {
   return (
     <a style={combinedStyle} href={props.href}>
       {props.children}
+      {props.icon}
     </a>
   );
 };

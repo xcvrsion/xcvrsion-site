@@ -7,7 +7,7 @@ export const BusinessSection: FC = () => {
   return (
     <div>
       <Section>
-        <Text h1 center>
+        <Text center h1>
           {'Let\'s talk business.'}
         </Text>
       </Section>
