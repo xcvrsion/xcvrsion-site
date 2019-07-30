@@ -1,0 +1,6 @@
+.ListItem {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  grid-gap: 1rem;
+}

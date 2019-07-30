@@ -1,65 +1,31 @@
-import React, { CSSProperties, Component } from 'react';
-import { ITextProps, Text } from './Text';
+import React, { FC, CSSProperties } from 'react';
 import { Colors } from '../resources';
 
-export interface ILinkProps extends ITextProps {
-  href: string;
+export interface ILinkProps {
+  style?: CSSProperties;
+  href?: string;
+  noUnderline?: boolean;
 }
 
-export interface ILinkState {
-  focusing: boolean;
-}
+export const Link: FC<ILinkProps> = (props) => {
+  const combinedStyle = Object.assign({},
+    styles.link,
+    props.noUnderline && styles.noUnderline,
+    props.style,
+  );
 
-export class Link extends Component<ILinkProps, ILinkState> {
-
-  constructor(props: ILinkProps) {
-    super(props);
-
-    this.state = {
-      focusing: false,
-    };
-  }
-
-  private _handleFocusing = () => {
-    this.setState({ focusing: true });
-  }
-
-  private _handleStopFocusing = () => {
-    this.setState({ focusing: false });
-  }
-
-  render = () => {
-    const linkStyle = Object.assign({},
-      styles.link,
-      this.props.style,
-      this.state.focusing && styles.hovering,
-    );
-
-    return (
-      <a
-        style={styles.anchor}
-        href={this.props.href}
-        onMouseOver={this._handleFocusing}
-        onMouseOut={this._handleStopFocusing}
-        onTouchStart={this._handleFocusing}
-        onTouchEnd={this._handleStopFocusing}>
-        <Text userSelect style={linkStyle} {...this.props}>
-          {this.props.children}
-        </Text>
-      </a>
-    );
-  }
+  return (
+    <a style={combinedStyle} href={props.href}>
+      {props.children}
+    </a>
+  );
 };
 
 const styles = {
-  anchor: {
+  link: {
+    color: Colors.accent,
+  } as CSSProperties,
+  noUnderline: {
     textDecoration: 'none',
   } as CSSProperties,
-  hovering: {
-    color: Colors.primary,
-    textDecoration: 'underline',
-  } as CSSProperties,
-  link: {
-    color: Colors.black,
-  } as CSSProperties,
-};
+}
