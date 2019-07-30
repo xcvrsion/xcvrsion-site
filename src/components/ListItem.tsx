@@ -1,6 +1,5 @@
 import React, { FC, CSSProperties } from 'react';
 import { FaCheck } from 'react-icons/fa';
-import './ListItem.css';
 import { Colors } from '../resources';
 
 export interface IListItemProps {
@@ -8,10 +7,24 @@ export interface IListItemProps {
 }
 
 export const ListItem: FC<IListItemProps> = (props) => {
+  const combinedStyle = Object.assign({},
+    styles.listItem,
+    props.style,
+  );
+
   return (
-    <div className={'ListItem'} style={props.style}>
+    <div style={combinedStyle}>
       <FaCheck size={18} color={Colors.accent} />
       {props.children}
     </div >
   );
+};
+
+const styles = {
+  listItem: {
+    display: 'grid',
+    gridTemplateColumns: 'auto auto',
+    alignItems: 'baseline',
+    gridGap: '1rem',
+  },
 };

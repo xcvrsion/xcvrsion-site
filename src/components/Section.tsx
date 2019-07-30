@@ -1,20 +1,41 @@
 import React, { FC, CSSProperties } from 'react';
-import './Section.css';
 
 export interface ISectionProps {
   style?: CSSProperties;
   contentStyle?: CSSProperties;
-  className?: string;
 }
 
 export const Section: FC<ISectionProps> = (props) => {
-  const combinedClassName = ['Section', props.className].join(' ');
+  const combinedStyle = Object.assign({},
+    styles.section,
+    props.style,
+  );
+
+  const combinedContentStyle = Object.assign({},
+    styles.sectionContent,
+    props.contentStyle,
+  );
 
   return (
-    <div className={combinedClassName} style={props.style}>
-      <div className={'SectionContent'} style={props.contentStyle}>
+    <div style={combinedStyle}>
+      <div style={combinedContentStyle}>
         {props.children}
       </div >
-    </div>
+    </div >
   );
+};
+
+const styles = {
+  section: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    flexDirection: 'column',
+  } as CSSProperties,
+  sectionContent: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
+    maxWidth: '1200px',
+    width: '100%',
+  } as CSSProperties,
 };
