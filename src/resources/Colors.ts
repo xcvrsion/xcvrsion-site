@@ -1,7 +1,9 @@
 export const Colors = {
-  black: '#000',
-  white: '#fff',
-  gray: '#777',
-  lightGray: '#bbb',
-  primary: '#f57',
+  accent: 'rgb(88,86,214)',
+  accent2: 'rgb(255,45,85)',
+  primary: 'rgb(0,0,0)',          // accent, bold text
+  darkGray: 'rgb(152,152,157)',   // main text
+  midGray: 'rgb(174,174,178)',    // disabled
+  lightGray: 'rgb(242,242,247)',  // borders
+  white: 'rgb(255,255,255)',      // background
 };
