@@ -4,8 +4,8 @@ import { Images } from '../resources';
 export const AppDemo: FC = (props) => {
   return (
     <div style={styles.appDemo}>
-      <img src={Images.phone} style={styles.phone} />
-      <img src={Images.xcvrsionAppMain} style={styles.app} />
+      <img src={Images.phone} style={styles.phone} alt={'phone'} />
+      <img src={Images.xcvrsionAppMain} style={styles.app} alt={'app-demo'} />
     </div>
   );
 };
