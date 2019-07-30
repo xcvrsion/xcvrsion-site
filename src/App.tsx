@@ -98,6 +98,6 @@ const App: FC = () => {
       </Section>
     </div>
   );
-};
+}
 
 export default App;

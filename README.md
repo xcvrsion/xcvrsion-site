@@ -1,2 +1,2 @@
-# xcvrsion.github.io
-Xcvrsion company website
+# xcvrsion-site
+Company website for Xcvrsion
