@@ -1,6 +1,7 @@
 import React, { FC, CSSProperties } from 'react';
 import './SectionItem.css';
 import useWindowSize from '@rehooks/window-size';
+import Fade from 'react-reveal/Fade';
 
 export interface ISectionItemProps {
   style?: CSSProperties;
@@ -16,9 +17,11 @@ export const SectionItem: FC<ISectionItemProps> = (props) => {
   );
 
   return (
-    <div className='SectionItem' style={combinedStyles}>
-      {props.children}
-    </div>
+    <Fade bottom cascade>
+      <div className='SectionItem' style={combinedStyles}>
+        {props.children}
+      </div>
+    </Fade>
   );
 };
 

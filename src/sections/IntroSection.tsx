@@ -14,11 +14,11 @@ export const IntroSection: FC = () => {
           <Text p>
             {'Take a virtual trip to your favorite university, a home of interest, or the latest concert.'}
           </Text>
-          <div style={{ width: '100%', display: 'grid', gridGap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
-            <Button title={'Get it on the App Store'} href=''>
+          <div style={{ width: '100%', display: 'grid', gridGap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))' }}>
+            <Button title={'Download from App Store'} href=''>
               <FaApple size={18} />
             </Button>
-            <Button title={'Get it on the Play Store'} href=''>
+            <Button title={'Download from Play Store'} href=''>
               <FaGooglePlay size={18} />
             </Button>
           </div>

@@ -41,7 +41,6 @@ const styles = {
     userSelect: 'none',
     fontSize: '0.7rem',
     marginLeft: '0.5rem',
-    fontWeight: 'bold',
   } as CSSProperties,
   titleMobile: {
     fontSize: '1rem',
@@ -49,7 +48,7 @@ const styles = {
   button: {
     color: Colors.white,
     backgroundColor: Colors.accent,
-    padding: '0.5rem 0.25rem 0.5rem 0.25rem',
+    padding: '0.5rem 0.5rem 0.5rem 0.5rem',
     borderRadius: '1rem',
     cursor: 'pointer',
     display: 'flex',

@@ -4,14 +4,14 @@ import { Colors } from '../resources';
 
 export const FooterSection: FC = () => {
   return (
-    <Section>
+    <Section contentStyle={{ gridAutoColumns: '1fr' }}>
       <SectionItem>
-        <Text p >
+        <Text style={{ margin: 0, color: Colors.primary }} p>
           {'© Xcvrsion, Inc.'}
         </Text>
       </SectionItem>
       <SectionItem>
-        <Link style={{ color: Colors.darkGray, textAlign: 'right', }} noUnderline href={'mailto:info@xcvrsion.com'}>
+        <Link style={{ margin: 0, color: Colors.primary }} noUnderline href={'mailto:info@xcvrsion.com'}>
           {'info@xcvrsion.com'}
         </Link>
       </SectionItem>

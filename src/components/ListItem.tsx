@@ -1,9 +1,8 @@
 import React, { FC, CSSProperties } from 'react';
-import { FaCheck } from 'react-icons/fa';
-import { Colors } from '../resources';
 
 export interface IListItemProps {
   style?: CSSProperties;
+  icon: any;
 }
 
 export const ListItem: FC<IListItemProps> = (props) => {
@@ -14,7 +13,7 @@ export const ListItem: FC<IListItemProps> = (props) => {
 
   return (
     <div style={combinedStyle}>
-      <FaCheck size={18} color={Colors.accent} />
+      {props.icon}
       {props.children}
     </div >
   );

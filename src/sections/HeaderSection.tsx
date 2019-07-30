@@ -4,7 +4,7 @@ import { Section, SectionItem, Link } from '../components';
 export const HeaderSection: FC = () => {
   return (
     <Section>
-      <SectionItem>
+      <SectionItem style={{ display: 'flex' }}>
         <Link noUnderline href={'https://xcvrsion.com'} style={{ fontWeight: 700 }}>
           {'Xcvrsion'}
         </Link>

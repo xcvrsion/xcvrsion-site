@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Section, SectionItem, Text, ListItem } from '../components';
-import { FaVrCardboard, FaHandsHelping } from 'react-icons/fa';
+import { FaVrCardboard, FaHandsHelping, FaPlus, FaCheck } from 'react-icons/fa';
 import { Colors } from '../resources';
 
 export const BusinessSection: FC = () => {
@@ -22,14 +22,14 @@ export const BusinessSection: FC = () => {
             </Text>
           </div>
           <div>
-            <ListItem>
+            <ListItem icon={<FaCheck size={18} color={Colors.accent} />}>
               <Text p>
                 {'We provide the headsets, content, and labor to make things happen.'}
               </Text>
             </ListItem>
-            <ListItem>
+            <ListItem icon={<FaCheck size={18} color={Colors.accent} />}>
               <Text p>
-                {'We make sure that everyone is able to join in on the experiences you desire.'}
+                {'We make sure that everyone is able to join in on the experiences you want to share.'}
               </Text>
             </ListItem>
           </div>
@@ -43,9 +43,11 @@ export const BusinessSection: FC = () => {
               {'We are on your team.'}
             </Text>
           </div>
-          <Text p>
-            {'Whether you are a university, real estate agency, music company, or another organization, we are here to help.'}
-          </Text>
+          <ListItem icon={<FaPlus size={18} color={Colors.accent2} />}>
+            <Text p>
+              {'Whether you are a university, real estate agency, music company, or another organization, we can get things started.'}
+            </Text>
+          </ListItem>
         </SectionItem>
       </Section>
     </div>

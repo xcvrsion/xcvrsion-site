@@ -1,12 +1,15 @@
 import React, { FC, CSSProperties } from 'react';
 import { Images } from '../resources';
+import Fade from 'react-reveal/Fade';
 
-export const AppDemo: FC = (props) => {
+export const AppDemo: FC = () => {
   return (
-    <div style={styles.appDemo}>
-      <img src={Images.phone} style={styles.phone} alt={'phone'} />
-      <img src={Images.xcvrsionAppMain} style={styles.app} alt={'app-demo'} />
-    </div>
+    <Fade>
+      <div style={styles.appDemo}>
+        <img src={Images.phone} style={styles.phone} alt={'phone'} />
+        <img src={Images.xcvrsionAppMain} style={styles.app} alt={'app-demo'} />
+      </div>
+    </Fade>
   );
 };
 
