@@ -9,10 +9,10 @@ export const IntroSection: FC = () => {
       <Section>
         <SectionItem style={{ gridTemplateRows: '0fr 0fr 0fr' }}>
           <Text h1>
-            {'Tour like never before, quicker than ever.'}
+            {'Tour like never before, easily.'}
           </Text>
           <Text p>
-            {'Go on a virtual tour of your favorite university, a home of interest, or the latest concert.'}
+            {'Go on a virtual tour of your favorite university, a home of interest, or the latest events.'}
           </Text>
           <div style={{ width: '100%', display: 'grid', gridGap: '1rem', gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))' }}>
             <Button title={'Download from App Store'} href=''>
