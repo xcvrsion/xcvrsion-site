@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "afa13b52ebcb65dc89def3e14c71dfab",
+    "revision": "4e8cc1f4770ce3ac278c74c1c11a6dec",
     "url": "/index.html"
   },
   {
-    "revision": "371db02450e46d2e7b5b",
-    "url": "/static/css/main.66112611.chunk.css"
+    "revision": "7660339da3ed02370ddc",
+    "url": "/static/css/main.13bf413c.chunk.css"
   },
   {
     "revision": "0184225c160e4f99d97a",
     "url": "/static/js/2.f0170f70.chunk.js"
   },
   {
-    "revision": "371db02450e46d2e7b5b",
-    "url": "/static/js/main.4fd9f6a1.chunk.js"
+    "revision": "7660339da3ed02370ddc",
+    "url": "/static/js/main.973f048c.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -26,9 +26,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "4e7b91d586076956de7b6abf98e534f2",
     "url": "/static/media/xcvrsion-app-main.4e7b91d5.png"
-  },
-  {
-    "revision": "48d42f1713026f75e6334bec79ffa9c0",
-    "url": "/static/media/xcvrsion-vr-signature-black-on-empty.48d42f17.png"
   }
 ]);

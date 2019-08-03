@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.66112611.chunk.css",
-    "main.js": "/static/js/main.4fd9f6a1.chunk.js",
-    "main.js.map": "/static/js/main.4fd9f6a1.chunk.js.map",
+    "main.css": "/static/css/main.13bf413c.chunk.css",
+    "main.js": "/static/js/main.973f048c.chunk.js",
+    "main.js.map": "/static/js/main.973f048c.chunk.js.map",
     "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
     "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
     "static/js/2.f0170f70.chunk.js": "/static/js/2.f0170f70.chunk.js",
     "static/js/2.f0170f70.chunk.js.map": "/static/js/2.f0170f70.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.2141e25c9743533a877c79c564e91795.js": "/precache-manifest.2141e25c9743533a877c79c564e91795.js",
+    "precache-manifest.7b5fd9e4a9d87c9e419085f7d26593e8.js": "/precache-manifest.7b5fd9e4a9d87c9e419085f7d26593e8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.66112611.chunk.css.map": "/static/css/main.66112611.chunk.css.map",
+    "static/css/main.13bf413c.chunk.css.map": "/static/css/main.13bf413c.chunk.css.map",
     "static/media/phone.png": "/static/media/phone.27011c9f.png",
-    "static/media/xcvrsion-app-main.png": "/static/media/xcvrsion-app-main.4e7b91d5.png",
-    "static/media/xcvrsion-vr-signature-black-on-empty.png": "/static/media/xcvrsion-vr-signature-black-on-empty.48d42f17.png"
+    "static/media/xcvrsion-app-main.png": "/static/media/xcvrsion-app-main.4e7b91d5.png"
   }
 }
