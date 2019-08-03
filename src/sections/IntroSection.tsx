@@ -9,7 +9,7 @@ export const IntroSection: FC = () => {
       <Section>
         <SectionItem style={{ gridTemplateRows: '0fr 0fr 0fr' }}>
           <Text h1>
-            {'Tour like never before, easily.'}
+            {'Tour like never before, easier than ever.'}
           </Text>
           <Text p>
             {'Go on a virtual tour of your favorite university, a home of interest, or the latest event.'}
